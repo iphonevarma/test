@@ -27,14 +27,14 @@
 
 
 -(void)touchesBegan:(NSSet*)trigger withEvent:(UIEvent*)event{
-//    UITouch *touch = [trigger anyObject];
-//    
-//    if(touch.view.tag == 1){
-//        CGRect pickerFrame = CGRectMake(0,220,320,216);
-//        UIDatePicker *pickDate = [[UIDatePicker alloc]initWithFrame:pickerFrame];
-//        
-//        [pickDate addTarget:self action:@selector(dateSelected:)forControlEvents:UIControlEventValueChanged];
-//        [self.view addSubview:pickDate];}
+    UITouch *touch = [trigger anyObject];
+    
+    if(touch.view.tag == 1){
+        CGRect pickerFrame = CGRectMake(0,220,320,216);
+        UIDatePicker *pickDate = [[UIDatePicker alloc]initWithFrame:pickerFrame];
+        
+        [pickDate addTarget:self action:@selector(dateSelected:)forControlEvents:UIControlEventValueChanged];
+        [self.view addSubview:pickDate];}
 }
 
 
